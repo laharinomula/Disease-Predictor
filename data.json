@@ -1,0 +1,288 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [""],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "cold",
+        "patterns": ["cold","what is cold"],
+        "responses": ["The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold. Healthy adults can expect to have two or three colds each year. Infants and young children may have even more frequent colds.","sneezing,sore throat,cough"],
+        "context": [""]
+       },
+       {"tag": "cold",
+        "patterns": ["what is cold"],
+        "responses": ["The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold. Healthy adults can expect to have two or three colds each year. Infants and young children may have even more frequent colds.","sneezing,sore throat,cough"],
+        "context": [""]
+       },
+       {"tag": "Diabetes",
+        "patterns": ["Diabetes", "what is Diabetes"],
+        
+        "responses": ["Diabetes is a chronic, metabolic disease characterized by elevated levels of blood glucose (or blood sugar), which leads over time to serious damage to the heart, blood vessels, eyes, kidneys and nerves."],
+        "context": [""]
+        },
+        {"tag": "Allergies",
+            "patterns": ["Allergies", "What is Allergies"],
+            "responses": ["Allergies are an immune response triggered by allergens, an ordinarily harmful substance.","eye irritation,runny nose,stuffy nose,Puffy, watery eyes,Sneezing,Inflamed, itchy nose and throat"]
+           },
+        {"tag": "Allergies",
+            "patterns": ["eye irritation,runny nose,stuffy nose,Puffy, watery eyes,Sneezing,Inflamed, itchy nose and throat"],
+            "responses": ["Allergies"]
+           },
+           
+           {"tag": "Flu",
+            "patterns": ["fever,headache,fatigue,cough"],
+            "responses": ["Flu"]
+           },
+           {"tag": "Cold",
+            "patterns": ["what is cold"],
+            "responses": ["A common viral infection of the nose and throat."]
+           },
+           {"tag": "Cold",
+            "patterns": ["sneezing,sore throat,cough"],
+            "responses": ["Cold"]
+           },
+           {"tag": "Allergies",
+            "patterns": ["Allergies", "What is Allergies"],
+            "responses": ["Allergies are an immune response triggered by allergens, an ordinarily harmful substance.","eye irritation,runny nose,stuffy nose,Puffy, watery eyes,Sneezing,Inflamed, itchy nose and throat"]
+           },
+           {"tag": "migraine",
+            "patterns": ["migraine", "What is migraine"],
+            "responses": [" Migraine is a neurologic disorder that often causes a strong headache. The headache comes in episodes and sometimes also comes with nausea, vomiting, and sensitivity to light. ","eye irritation,runny nose,stuffy nose,Puffy, watery eyes,Sneezing,Inflamed, itchy nose and throat"]
+           },
+           {"tag": "Nose Bleeding",
+            "patterns": ["Nose Bleeding", "What is Nose Bleeding"],
+            "responses": [" Dry nasal membranes cause nosebleeds, which are a major health problem among students. This is a prevalent problem among students who have a habit of picking up their noses regularly. When someone picks their nose, the blood vessels inside rupture, causing the nose to bleed."]
+           },
+           {"tag": "Chicken Pox",
+            "patterns": ["Chicken Pox", "What is Chicken Pox"],
+            "responses": [" It is a contagious disease that causes the development of rashes and then itchy blisters all over the body. This is followed by high body temperature, and also severe pain in the throat during swallowing.","fatigue, fever,loss of appetite,headache, itching, sore throat,swollen lymph nodes"]
+           },
+           {"tag": "Chicken Pox",
+            "patterns": ["Chicken Pox", "symptoms of Chicken Pox"],
+            "responses": ["fatigue, fever,loss of appetite,headache, itching, sore throat,swollen lymph nodes"]
+           },
+           {"tag": " Food Poisoning",
+            "patterns": [" Food Poisoning", "What is Food Poisoning"],
+            "responses": ["Food poisoning is an illness caused by eating contaminated food. It's not usually serious and most people get better within a few days without treatment. In most cases of food poisoning, the food is contaminated by bacteria, such as salmonella or Escherichia coli (E. coli), or a virus, such as the norovirus."]
+           },
+           {"tag": " Food Poisoning",
+            "patterns": ["What causes Food Poisoning"],
+            "responses": ["consuming uncovered, stale, unrefrigerated, or contaminated food."]
+           },
+           {"tag": "stomach pain",
+            "patterns": ["stomach pain", "What is stomach pain"],
+            "responses": [" Abdominal pain is pain that you feel anywhere between your chest and groin. This is often referred to as the stomach region or belly."]
+           },
+           {"tag": "covid-19",
+            "patterns": ["coronavirus","covid-19","what is covid-19"],
+            "responses": ["Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.The virus can spread from an infected person’s mouth or nose in small liquid particles when they cough, sneeze, speak, sing or breathe. These particles range from larger respiratory droplets to smaller aerosols. It is important to practice respiratory etiquette, for example by coughing into a flexed elbow, and to stay home and self-isolate until you recover if you feel unwell. "]
+           },
+           {"tag": "covid-19",
+            "patterns": ["symptoms of coronavirus","symptoms of covid-19"],
+            "responses": ["Fever,chills,Shortness,breath or difficulty breathing,Fatigue,Muscle or body aches Headache,New loss of taste or smell,Soar throat,Congestion or runny nose,Nausea or vomiting,Diarrhea"]
+           },
+           {"tag": "aids",
+            "patterns": ["aids","what is aids"],
+            "responses": ["Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease."]
+           },
+           {"tag": "aids",
+            "patterns": ["sneezing,sore throat,cough"],
+            "responses": ["Cold"]
+           },
+           {"tag": "gerd",
+            "patterns": ["gerd","what is gerd"],
+            "responses": ["Gastroesophageal reflux disease (GERD) occurs when stomach acid repeatedly flows back into the tube connecting your mouth and stomach (esophagus). This backwash (acid reflux) can irritate the lining of your esophagus. Many people experience acid reflux from time to time."]
+           },
+
+           {"tag": "Fungal infection",
+            "patterns": ["what is Fungal infection"],
+            "responses": ["A fungus that invades the tissue can cause a disease that's confined to the skin, spreads into tissue, bones and organs or affects the whole body."]
+           },
+           {"tag": " hypertension",
+            "patterns": ["hypertension","What is hypertension"],
+            "responses": ["A condition in which the force of the blood against the artery walls is too high. Usually hypertension is defined as blood pressure above 140/90, and is considered severe if the pressure is above 180/120.High blood pressure often has no symptoms. Over time, if untreated, it can cause health conditions, such as heart disease and stroke.","headaches,chest pain,dizziness,difficulty breathing,nausea,vomiting,blurred vision or other vision changes,anxiety."]
+           },
+           {"tag": "Fungal infection",
+            "patterns": ["what is Fungal infection"],
+            "responses": ["A fungus that invades the tissue can cause a disease that's confined to the skin, spreads into tissue, bones and organs or affects the whole body."]
+           },
+           {"tag": "Jaundice",
+            "patterns": ["Jaundice","what is Jaundice"],
+            "responses": ["Jaundice is a condition produced when excess amounts of bilirubin circulating in the blood stream dissolve in the subcutaneous fat (the layer of fat just beneath the skin), causing a yellowish appearance of the skin and the whites of the eyes."]
+           },
+           {"tag": "Malaria",
+            "patterns": ["Malaria","what is Malaria"],
+            "responses": ["Malaria is a life-threatening disease spread to humans by some types of mosquitoes. It is mostly found in tropical countries. It is preventable and curable. Symptoms can be mild or life-threatening. Mild symptoms are fever, chills and headache."]
+           },
+           {"tag": "dengue",
+            "patterns": ["dengue","what is dengue"],
+            "responses": ["A mosquito-borne viral disease occurring in tropical and subtropical areas.Those who become infected with the virus a second time are at a significantly greater risk of developing severe disease.","Fever,Chills,Headache,Nausea,vomiting,Muscle or joint pain"]
+           },
+           {"tag": "dengue",
+            "patterns": ["Fever,Chills,Headache,Nausea,vomiting,Muscle or joint pain"],
+            "responses": ["dengue"]
+           },
+           {"tag": "heart attack",
+            "patterns": ["heart attack","what is heart attack"],
+            "responses": ["Heart attack signs and symptoms in men and women: Chest pain or discomfort; Shortness of breath; Pain or discomfort in the jaw, neck, back, arm, or shoulder; Feeling nauseous, light-headed, or unusually tired."]
+           },
+           {"tag": "heart attack",
+            "patterns": ["Chest pain,Shortness of breath,Feeling nauseous, light-headed"],
+            "responses": ["heart attack"]
+           },
+           {"tag": "TB",
+            "patterns": ["weakness, weight loss, fever, and night sweats"],
+            "responses": ["TB"]
+           },
+           {"tag": "TB ",
+            "patterns": ["TB","what is TB"],
+            "responses": ["Tuberculosis (TB) is an infection that usually affects the lungs. It can be treated with antibiotics but can be serious if not treated. There's a vaccine that helps protect some people who are at risk from TB."]
+           },
+           {"tag": "cancer",
+            "patterns": ["cancer","what is cancer"],
+            "responses": ["Cancer is a disease in which some of the body’s cells grow uncontrollably and spread to other parts of the body. Cancer can start almost anywhere in the human body, which is made up of trillions of cells. Normally, human cells grow and multiply (through a process called cell division) to form new cells as the body needs them. When cells grow old or become damaged, they die, and new cells take their place."]
+           },
+           {"tag": "cancer",
+            "patterns": ["symptoms of cancer"],
+            "responses": ["Breast changes,Bladder changes,Bleeding or bruising,Bowel changes,Cough,Fatigue,Neurological problems,Swelling or lumps,Weight gain or weight loss,Neurological problems"]
+           },
+           {"tag": "flu",
+            "patterns": ["Influenza","flu","what is Influenza","what is flu"],
+            "responses": ["A common viral infection that can be deadly, especially in high-risk groups.The flu attacks the lungs, nose and throat. Young children, older adults, pregnant women and people with chronic disease or weak immune systems are at high risk.Symptoms include fever, chills, muscle aches, cough, congestion, runny nose, headaches and fatigue.Flu is primarily treated with rest and fluid intake to allow the body to fight the infection on its own."]
+           },
+           {"tag": "Typhoid",
+            "patterns": ["Typhoid","what is Typhoid"],
+            "responses": ["Typhoid fever is an infection that spreads through contaminated food and water.Vaccines are recommended in areas where typhoid fever is common.Symptoms include high fever, headache, stomach pain, weakness, vomiting and loose stools."]
+           },
+           {"tag": "Typhoid",
+            "patterns": ["high fever, headache, stomach pain, weakness, vomiting and loose stools."],
+            "responses": ["Typhoid"]
+           },
+           {"tag": "hepatitis A",
+            "patterns": ["hepatitis A","what is hepatitis A"],
+            "responses": ["A highly contagious liver infection caused by the hepatitis A virus.Hepatitis A is preventable by vaccine. It spreads from contaminated food or water or contact with someone who is infected.Symptoms include fatigue, nausea, abdominal pain, loss of appetite and low-grade fever.The condition clears up on its own in one or two months. Rest and adequate hydration can help."]
+           },
+           {"tag": "Hepatitis B",
+            "patterns": ["Hepatitis B","what is Hepatitis B"],
+            "responses": ["A serious liver infection caused by the hepatitis B virus that's easily preventable by a vaccine.This disease is most commonly spread by exposure to infected bodily fluids.Symptoms are variable and include yellowing of the eyes, abdominal pain and dark urine. Some people, particularly children, don't experience any symptoms. In chronic cases, liver failure, cancer or scarring can occur.The condition often clears up on its own. Chronic cases require medication and possibly a liver transplant."]
+           },
+           {"tag": "Hepatitis C",
+            "patterns": ["Hepatitis C","what is Hepatitis C"],
+            "responses": ["An infection caused by a virus that attacks the liver and leads to inflammation.The virus is spread by contact with contaminated blood; for example, from sharing needles or from unsterile tattoo equipment.Most people have no symptoms. Those who do develop symptoms may have fatigue, nausea, loss of appetite and yellowing of the eyes and skin.Hepatitis C is treated with antiviral medication. In some people, newer medicines can eradicate the virus."]
+           },
+           {"tag": "Hepatitis D",
+            "patterns": ["Hepatitis D","what is Hepatitis D"],
+            "responses": ["A serious liver disease caused by infection with the hepatitis D virus.Hepatitis D only occurs amongst people who are infected with the Hepatitis B virus. Transmission requires contact with infectious blood. At-risk populations include intravenous drug abusers and men who have sex with men.Symptoms include abdominal pain, nausea and fatigue.There are few treatments specifically for hepatitis D, although different regimes may be tried. Management also focuses on supportive care."]
+           },
+           {"tag": "Hepatitis E",
+            "patterns": ["Hepatitis E","what is Hepatitis E"],
+            "responses": ["A liver disease caused by the hepatitis E virus.The hepatitis E virus is mainly transmitted through drinking water contaminated with faecal matter.Symptoms include jaundice, lack of appetite and nausea. In rare cases, it may progress to acute liver failure.Hepatitis E usually resolves on its own within four to six weeks. Treatment focuses on supportive care, rehydration and rest."]
+           },
+           {"tag": "Alcoholic hepatitis",
+            "patterns": ["Alcoholic hepatitis","what is Alcoholic hepatitis"],
+            "responses": ["Liver inflammation caused by drinking too much alcohol.Alcoholic hepatitis can occur in people who drink heavily for many years.Symptoms include yellow skin and eyes along with increasing stomach size due to fluid accumulation.Treatment involves hydration, nutritional care and stopping alcohol use. Steroid drugs can help reduce liver inflammation."]
+           },
+           {"tag": "Pneumonia",
+            "patterns": ["Pneumonia","what is Pneumonia"],
+            "responses": ["Infection that inflames air sacs in one or both lungs, which may fill with fluid.With pneumonia, the air sacs may fill with fluid or pus. The infection can be life-threatening to anyone, but particularly to infants, children and people over 65.Symptoms include a cough with phlegm or pus, fever, chills and difficulty breathing.Antibiotics can treat many forms of pneumonia. Some forms of pneumonia can be prevented by vaccines."]
+           },
+           {"tag": "Hemorrhoids",
+            "patterns": ["Hemorrhoids","what is Hemorrhoids","piles","what is piles"],
+            "responses": ["Hemorrhoids, or piles, are a common issue. These swollen veins inside of your rectum or outside of your anus can cause pain, anal itching and rectal bleeding. Symptoms often improve with at-home treatments, but on occasion, people need medical procedures. Eating more fiber can help prevent hemorrhoids."]
+           },
+           {"tag": "Hemorrhoids",
+            "patterns": ["Rectal bleeding,Itchy anus,Hard lumps,ache in anus"],
+            "responses": ["Hemorrhoids","piles"]
+           },
+           {"tag": "Varicose veins",
+            "patterns": ["Varicose veins","what is Varicose veins"],
+            "responses": ["Varicose veins are generally benign. The cause of this condition is not known.For many people, there are no symptoms and varicose veins are simply a cosmetic concern. In some cases, they cause aching pain and discomfort or signal an underlying circulatory problem.Treatment involves compression stockings, exercise or procedures to close or remove the veins."]
+           },
+           {"tag": "Hypothyroidism",
+            "patterns": ["Hypothyroidism","what is Hypothyroidism"],
+            "responses": ["A condition in which the thyroid gland doesn't produce enough thyroid hormone.Hypothyroidism's deficiency of thyroid hormones can disrupt such things as heart rate, body temperature and all aspects of metabolism. Hypothyroidism is most prevalent in older women.Major symptoms include fatigue, cold sensitivity, constipation, dry skin and unexplained weight gain.Treatment consists of thyroid hormone replacement."]
+           },
+           {"tag": "Hypoglycemia",
+            "patterns": ["Hypoglycemia","what is Hypoglycemia"],
+            "responses": ["Low blood sugar, the body's main source of energy.Diabetes treatment and other conditions can cause hypoglycaemia.Confusion, heart palpitations, shakiness and anxiety are symptoms.Consuming high-sugar foods or drinks, such as orange juice or regular fizzy drinks, can treat this condition. Alternatively, medication can be used to raise blood sugar levels. It's also important that a doctor identifies and treats the underlying cause."]
+           },
+           {"tag": "Osteoarthritis",
+            "patterns": ["Osteoarthritis","what is Osteoarthritis"],
+            "responses": ["A type of arthritis that occurs when flexible tissue at the ends of bones wears down.The wearing down of the protective tissue at the ends of bones (cartilage) occurs gradually and worsens over time.Joint pain in the hands, neck, lower back, knees or hips is the most common symptom.Medication, physiotherapy and sometimes surgery can help reduce pain and maintain joint movement."]
+           },
+           {"tag": "Acne",
+            "patterns": ["Acne","what is Acne","pimples"],
+            "responses": ["A skin condition that occurs when hair follicles plug with oil and dead skin cells.Acne is most common in teenagers and young adults.Symptoms range from uninflamed blackheads to pus-filled pimples or large, red and tender bumps.Treatments include over-the-counter creams and cleanser, as well as prescription antibiotics."]
+           },
+           {"tag": "acne",
+            "patterns": ["pimples, redness, or tenderness,pimple or blackhead"],
+            "responses": ["acne","pimples"]
+           },
+           {"tag": "Arthritis",
+            "patterns": ["Arthritis","what is Arthritis"],
+            "responses": ["Inflammation of one or more joints, causing pain and stiffness that can worsen with age.Different types of arthritis exist, each with different causes including wear and tear, infections and underlying diseases.Symptoms include pain, swelling, reduced range of motion and stiffness.Medication, physiotherapy or sometimes surgery helps reduce symptoms and improve quality of life."]
+           },
+           {"tag": "Psoriasis",
+            "patterns": ["Psoriasis","what is Psoriasis"],
+            "responses": ["A condition in which skin cells build up and form scales and itchy, dry patches.Psoriasis is thought to be an immune system problem. Triggers include infections, stress and cold.The most common symptom is a rash on the skin, but sometimes the rash involves the nails or joints.Treatment aims to remove scales and stop skin cells from growing so quickly. Topical ointments, light therapy and medication can offer relief."]
+           },
+           {"tag": "Impetigo",
+            "patterns": ["Impetigo","what is Impetigo"],
+            "responses": ["A highly contagious skin infection that causes red sores on the face.Impetigo mainly affects infants and children.The main symptom is red sores that form around the nose and mouth. The sores rupture, ooze for a few days, then form a yellow-brown crust.Antibiotics shorten the infection and can help prevent spread to others."]
+           },
+           {"tag": "Stomach ulcer",
+            "patterns": ["Stomach ulcer","what is Stomach ulcer","peptic ulcer","what is peptic ulcer"],
+            "responses": ["A sore that develops on the lining of the oesophagus, stomach or small intestine.Ulcers occur when stomach acid damages the lining of the digestive tract. Common causes include the bacteria H. Pylori and anti-inflammatory pain relievers including aspirin.Upper abdominal pain is a common symptom.Treatment usually includes medication to decrease stomach acid production. If it is caused by bacteria, antibiotics may be required."]
+           },
+           {"tag": "Peptic Ulcers",
+            "patterns": ["nausea,vomiting,bloating,belching"],
+            "responses": ["Peptic Ulcers","stomach ulcers"]
+           },
+           {"tag": "Cholestasis",
+            "patterns": ["Chronic cholestasis","what is Chronic cholestasis"],
+            "responses": ["Cholestasis is the slowing or stalling of bile flow through your biliary system. It can be a problem in your liver or in your bile ducts. Bile that can’t flow leaks into your bloodstream and backs up into your organs, causing inflammation."]
+           },
+           {"tag": "Asthma",
+            "patterns": ["Asthma","what is Asthma","Bronchial Asthma"],
+            "responses": ["Recurrent episodes of acute shortness of breath, typically occurring at night or in the early morning hours, are the cardinal manifestation of bronchial asthma. Further symptoms include cough, wheezing, and a feeling of tightness in the chest. Asthmatic symptoms can often arise after physical exercise."]
+           },
+           {"tag": "cancer",
+            "patterns": ["treatment for cancer"],
+            "responses": ["Cancer treatment is the use of surgery, radiation, medications and other therapies to cure a cancer, shrink a cancer or stop the progression of a cancer.Many cancer treatments exist. Depending on your particular situation, you may receive one treatment or you may receive a combination of treatments."]
+           },
+           {"tag": "asthma",
+            "patterns": ["treatment for asthma"],
+            "responses": ["Inhalers, which are devices that let you breathe in medicine, are the main treatment. Tablets and other treatments may also be needed if your asthma is severe. You'll usually create a personal action plan with a doctor or asthma nurse."]
+           }
+           
+
+
+
+
+
+
+
+
+
+
+           
+           
+
+    
+]
+}
