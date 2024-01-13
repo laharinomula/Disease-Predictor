@@ -1,0 +1,311 @@
+<html>
+    <head>
+        <title>disease predictor</title>
+        
+  <style>
+    .sign-up-form
+    {
+      width:600px;
+      height:500px;
+      box-shadow:0 0 3px 0 rgba(0,0,0,0.3);
+      background:#fff;
+      padding:20px;
+      margin:8% auto 0;
+      text-align:center;
+      
+    }
+    body{
+        margin:0;
+        padding:0;
+        font-family:sans-serif;
+        background-image:url('./static/images/pho.jpg');
+        background-size: cover;
+        background-position:center ;
+       
+      }
+  </style>
+  
+    </head>
+    <body bgcolor=#d4a3ae>
+
+        <div class="sign-up-form">
+        <center>
+            <h1>RandomForestClassifier MODEL PREDICTION</h1>
+            {% if pred==15 %}
+                <p>fungal infection</p>
+            {% elif pred==4 %}
+            <p>Allergy</p>
+            {% elif pred==16 %}
+            <p>GERD</p>
+            {% elif pred==9 %}
+            <p>Chronic cholestasis</p>
+            {% elif pred==14 %}
+            <p>Drug Reaction</p>
+            {% elif pred==33 %}
+            <p>Peptic ulcer diseae</p>
+            {% elif pred==1 %}
+            <p>AIDS</p>
+            {% elif pred==12 %}
+            <p>Diabetes</p>
+            {% elif pred==17 %}
+            <p>Gastroenteritis</p>
+            {% elif pred==6 %}
+            <p>Bronchial Asthma</p>
+            {% elif pred==23 %}
+            <p>Hypertension</p>
+            {% elif pred==30 %}
+            <p>Migraine</p>
+            {% elif pred==7 %}
+            <p>Cervical spondylosis</p>
+            {% elif pred==32 %}
+            <p>Paralysis (brain hemorrhage)</p>
+            {% elif pred==28 %}
+            <p>Jaundice</p>
+            {% elif pred==29 %}
+            <p>Malaria</p>
+            {% elif pred==8 %}
+            <p>Chicken pox</p>
+            {% elif pred==11 %}
+            <p>Dengue</p>
+            {% elif pred==37 %}
+            <p>Typhoid</p>
+            {% elif pred==40 %}
+            <p>hepatitis A</p>
+            {% elif pred==19 %}
+            <p>Hepatitis B</p>
+            {% elif pred==20 %}
+            <p>Hepatitis C</p>
+            {% elif pred==21 %}
+            <p>Hepatitis D</p>
+            {% elif pred==22 %}
+            <p>Hepatitis E</p>
+            {% elif pred==3 %}
+            <p>Alcoholic hepatitis</p>
+            {% elif pred==36 %}
+            <p>Tuberculosis</p>
+            {% elif pred==10 %}
+            <p>Common Cold</p>
+            {% elif pred==34 %}
+            <p>Pneumonia</p>
+            {% elif pred==13 %}
+            <p>Dimorphic hemmorhoids(piles)</p>
+            {% elif pred==18 %}
+            <p>Heart attack</p>
+            {% elif pred==39 %}
+            <p>Varicose veins</p>
+            {% elif pred==26 %}
+            <p>Hypothyroidism</p>
+            {% elif pred==24 %}
+            <p>Hpyerthyroidism</p>
+            {% elif pred==25 %}
+            <p>Hypoglycemia</p>
+            {% elif pred==31 %}
+            <p>Osteoarthristis</p>
+            {% elif pred==5 %}
+            <p>Arthritis</p>
+            {% elif pred==0 %}
+            <p>Paroymsal positional vertigo</p>
+            {% elif pred==2 %}
+            <p>Acne</p>
+            {% elif pred==38 %}
+            <p>Urinary tract infection</p>
+            {% elif pred==35 %}
+            <p>Psoriasis</p>
+            {% elif pred==27 %}
+            <p>Impetigo</p>
+            {% elif pred==8 %}
+            <p>Fungal infection</p>
+            {%else%}
+                <p>Choose correct symptom</p>
+            {% endif %}
+           
+    </center>
+<br>
+
+    <center>
+            <h1>SVC MODEL PREDICTION</h1>
+            {% if pred1==15 %}
+            <p>fungal infection</p>
+            {% elif pred1==4 %}
+            <p>Allergy</p>
+            {% elif pred1==16 %}
+            <p>GERD</p>
+            {% elif pred1==9 %}
+            <p>Chronic cholestasis</p>
+            {% elif pred1==14 %}
+            <p>Drug Reaction</p>
+            {% elif pred1==33 %}
+            <p>Peptic ulcer diseae</p>
+            {% elif pred1==1 %}
+            <p>AIDS</p>
+            {% elif pred1==12 %}
+            <p>Diabetes</p>
+            {% elif pred1==17 %}
+            <p>Gastroenteritis</p>
+            {% elif pred1==6 %}
+            <p>Bronchial Asthma</p>
+            {% elif pred1==23 %}
+            <p>Hypertension</p>
+            {% elif pred1==30 %}
+            <p>Migraine</p>
+            {% elif pred1==7 %}
+            <p>Cervical spondylosis</p>
+            {% elif pred1==32 %}
+            <p>Paralysis (brain hemorrhage)</p>
+            {% elif pred1==28 %}
+            <p>Jaundice</p>
+            {% elif pred1==29 %}
+            <p>Malaria</p>
+            {% elif pred1==8 %}
+            <p>Chicken pox</p>
+            {% elif pred1==11 %}
+            <p>Dengue</p>
+            {% elif pred1==37 %}
+            <p>Typhoid</p>
+            {% elif pred1==40 %}
+            <p>hepatitis A</p>
+            {% elif pred1==19 %}
+            <p>Hepatitis B</p>
+            {% elif pred1==20 %}
+            <p>Hepatitis C</p>
+            {% elif pred1==21 %}
+            <p>Hepatitis D</p>
+            {% elif pred1==22 %}
+            <p>Hepatitis E</p>
+            {% elif pred1==3 %}
+            <p>Alcoholic hepatitis</p>
+            {% elif pred1==36 %}
+            <p>Tuberculosis</p>
+            {% elif pred1==10 %}
+            <p>Common Cold</p>
+            {% elif pred1==34 %}
+            <p>Pneumonia</p>
+            {% elif pred1==13 %}
+            <p>Dimorphic hemmorhoids(piles)</p>
+            {% elif pred1==18 %}
+            <p>Heart attack</p>
+            {% elif pred1==39 %}
+            <p>Varicose veins</p>
+            {% elif pred1==26 %}
+            <p>Hypothyroidism</p>
+            {% elif pred1==24 %}
+            <p>Hpyerthyroidism</p>
+            {% elif pred1==25 %}
+            <p>Hypoglycemia</p>
+            {% elif pred1==31 %}
+            <p>Osteoarthristis</p>
+            {% elif pred1==5 %}
+            <p>Arthritis</p>
+            {% elif pred1==0 %}
+            <p>Paroymsal positional vertigo</p>
+            {% elif pred1==2 %}
+            <p>Acne</p>
+            {% elif pred1==38 %}
+            <p>Urinary tract infection</p>
+            {% elif pred1==35 %}
+            <p>Psoriasis</p>
+            {% elif pred1==27 %}
+            <p>Impetigo</p>
+            {% elif pred1==8 %}
+            <p>Fungal infection</p>
+            {%else%}
+                <p>Choose correct symptom</p>
+            {% endif %}
+           
+</center>
+
+<center>
+    <h1>Naive Bayes Classifier MODEL PREDICTION</h1>
+    {% if pred2==15 %}
+    <p>fungal infection</p>
+    {% elif pred2==4 %}
+    <p>Allergy</p>
+    {% elif pred2==16 %}
+    <p>GERD</p>
+    {% elif pred2==9 %}
+    <p>Chronic cholestasis</p>
+    {% elif pred2==14 %}
+    <p>Drug Reaction</p>
+    {% elif pred2==33 %}
+    <p>Peptic ulcer diseae</p>
+    {% elif pred2==1 %}
+    <p>AIDS</p>
+    {% elif pred2==12 %}
+    <p>Diabetes</p>
+    {% elif pred2==17 %}
+    <p>Gastroenteritis</p>
+    {% elif pred2==6 %}
+    <p>Bronchial Asthma</p>
+    {% elif pred2==23 %}
+    <p>Hypertension</p>
+    {% elif pred2==30 %}
+    <p>Migraine</p>
+    {% elif pred2==7 %}
+    <p>Cervical spondylosis</p>
+    {% elif pred2==32 %}
+    <p>Paralysis (brain hemorrhage)</p>
+    {% elif pred2==28 %}
+    <p>Jaundice</p>
+    {% elif pred2==29 %}
+    <p>Malaria</p>
+    {% elif pred2==8 %}
+    <p>Chicken pox</p>
+    {% elif pred2==11 %}
+    <p>Dengue</p>
+    {% elif pred2==37 %}
+    <p>Typhoid</p>
+    {% elif pred2==40 %}
+    <p>hepatitis A</p>
+    {% elif pred2==19 %}
+    <p>Hepatitis B</p>
+    {% elif pred2==20 %}
+    <p>Hepatitis C</p>
+    {% elif pred2==21 %}
+    <p>Hepatitis D</p>
+    {% elif pred2==22 %}
+    <p>Hepatitis E</p>
+    {% elif pred2==3 %}
+    <p>Alcoholic hepatitis</p>
+    {% elif pred2==36 %}
+    <p>Tuberculosis</p>
+    {% elif pred2==10 %}
+    <p>Common Cold</p>
+    {% elif pred2==34 %}
+    <p>Pneumonia</p>
+    {% elif pred2==13 %}
+    <p>Dimorphic hemmorhoids(piles)</p>
+    {% elif pred2==18 %}
+    <p>Heart attack</p>
+    {% elif pred2==39 %}
+    <p>Varicose veins</p>
+    {% elif pred2==26 %}
+    <p>Hypothyroidism</p>
+    {% elif pred2==24 %}
+    <p>Hpyerthyroidism</p>
+    {% elif pred2==25 %}
+    <p>Hypoglycemia</p>
+    {% elif pred2==31 %}
+    <p>Osteoarthristis</p>
+    {% elif pred2==5 %}
+    <p>Arthritis</p>
+    {% elif pred2==0 %}
+    <p>Paroymsal positional vertigo</p>
+    {% elif pred2==2 %}
+    <p>Acne</p>
+    {% elif pred2==38 %}
+    <p>Urinary tract infection</p>
+    {% elif pred2==35 %}
+    <p>Psoriasis</p>
+    {% elif pred2==27 %}
+    <p>Impetigo</p>
+    {% elif pred2==8 %}
+    <p>Fungal infection</p>
+    {%else%}
+        <p>Choose correct symptom</p>
+    {% endif %}
+    
+</center>
+
+
+    </body>
+</html>
