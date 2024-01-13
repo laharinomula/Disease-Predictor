@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+:root{
+    --darkblue:#242A56;
+    --lightblue:#749BE7;
+    --bg:#EFF2FF;
+    --gradient: linear-gradient(to bottom right,#2a305f,#242a5652);
+
+    --bold:600;
+    --semi-bold:500;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    overflow-x: hodden;
+}
+
+a{
+    text-decoration: none;
+
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4{
+    font-weight: var(--bold);
+    color:var(--darkblue);
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+}
+
+.grid{
+    display:grid;
+    grid-gap:1.srem;
+}
+
+section{
+    padding:60px 0;
+}
+
+.header{
+    width: 100vw;
+    height: 10vh;
+    background-size: cover;
+    background-image: "{{url_for('static', filename='/Image/i3.jpg')}}" ;
+
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0;
+}
+.nav-item:hover.nav-item a{
+    color:#749BE7;
+}
+
+.logo img{
+    width:50px;
+}
+ul{
+    display:flex;
+}
+ul li a{
+    color:white;
+    margin: 0 20px;
+}
+
+.header-content{
+    
+    width:50%;
+    margin-top: 100px;
+}
+.header-content h1,.header-content h3{
+    color:whitesmoke;
+    margin:10px auto;
+}
+
+.header-content h1{
+    font-size: 3rem;
+}
+.header-content p{
+    margin-bottom: 30px;
+}
+p{
+    color:#393A56;
+}
+
+.title{
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+
+.services{
+    background: var(--bg);
+}
+
+.services-wrapper{
+    margin-top: 60px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,auto));
+   
+}
+.service{
+    color: white;
+    display:grid;
+    grid-gap: 10px;
+    padding:1rem 1rem;
+}
+.service .fa{
+    font-size: 30px;
+    color:var(--lightblue);
+}
+.service:hover{
+    background:var(--gradient);
+}
+.service{
+    margin-bottom: 10px;
+
+    box-sizing: 2px 2px 2px 2px black;
+}
+.portfolio-wrapper{
+    margin-top: 60px;
+    display:grid;
+    height:300;
+    grid-gap: 10px;
+    grid-template-columns:auto auto auto auto;
+}
+
+footer{
+    padding:60px 0;
+    background-color: #060e3f;
+   
+}
+
+footer .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+}
+footer h1,
+footer .p
+footer li{
+    color:white;
+    text-align: center;
+}
+footer ul{
+    flex-direction: column;
+    text-align: center;
+    color:#EFF2FF;
+}
+
+footer .col h1{
+    margin-bottom: 10px;
+}
+
+footer .social-icons .fa{
+    margin-right:10px;
+    font-size: 30px;
+    color:white;
+}
+footer .social-icons{
+    flex-direction: row;
+}
+hr, .copyright{
+    width:80%;
+    margin:auto;
+    margin:10px auto;
+  
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:poppins;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    background-color:blue;
+    color:white;
+    padding:20px;
+}
+
+header nav a{
+    color:white;
+    margin-right:30px;
+    font-weight: 600;
+}
+
+
+    </style>
+</head>
+<body>
+<!-- <img src= "{{url_for('static', filename='/Image/i3.jpg')}}" > -->
+    <!-- <header  class="header" id="header">
+        <div class="container">
+
+        <nav  class="navbar navbar-dark bg-dark" >
+            <li class="nav-item"><a href="#home">Home</a> </li>
+                <li class="nav-item"><a href="{{ url_for('login') }}">LOGIN</a></li>
+                </a>
+                <li class="nav-item"><a href="{{ url_for('register') }}">REGISTER</a></li>
+            
+        
+       
+    </nav> -->
+    <header  class="header" id="header">
+        <div class="container">
+
+        <nav class="nav" id="nav">
+            <div class="logo">
+                DISEASE PREDICTOR
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home">Home</a> </li>
+                <li class="nav-item"><a href="#about">About </a></li>
+                <li class="nav-item"><a href="#features">Features </a></li>
+                <li class="nav-item"><a href="#contact">Contact </a></li>
+                <li class="nav-item"><a href="{{ url_for('login') }}">LOGIN</a></li>
+                <li class="nav-item"><a href="{{ url_for('register') }}">REGISTER</a></li>
+                <li class="nav-item"><a href="{{ url_for('a') }}">PREDICT</a></li>
+            </ul>
+           
+        </nav>
+        <div data-aos="fade-down" class="header-content" id="home">
+            <h3>Disease Predictor</h3>
+            <h1>explore us<br>find us here</h1>
+        </div>
+
+
+        </div>
+        
+
+
+    </header>
+
+    <section id="features" class="features" >
+       
+        <div class="container">
+       
+        <div data-aos="fade-down" class="title">
+            <h1>Search &nbsp; Select  &nbsp; Settle</h1>
+            <p>Chatbots are everything you can talk to,we are here with the following features to help you in answering your queries.</p>
+        </div>
+        <div class="services-wrapper grid">
+            <div data-aos="fade-right" class="service">
+            <i class="fa fa-handshake-o"></i>
+            <h1>Easy To Use</h1>
+            <p>Our portal is easy to use and very efficient.</p>
+            </div>
+
+
+            <div data-aos="fade-down" class="service">
+            <i class="fa fa-home"></i>
+            <h1>Management</h1>
+            <p>Organize your thoughts at one place.</p>
+            </div>
+
+            <div data-aos="fade-left" class="service">
+            <i class="fa fa-clock-o"></i>
+            <h1> Saves time</h1>
+            <p>Our portal saves  your time.</p>
+            </div>
+            
+        </div>
+
+
+        </div>
+        
+    </section>
+    <section class="portfolio" id="about">
+        <div class="container">
+            <div data-aos="fade-down" class="title">
+                <h1>About</h1>
+                <p>chatbots are effective and efficient.We will help you make yourself safe,comfortable,easy and trust worthy.</p>
+            </div>
+            <div class="portfolio-wrapper grid">
+                <img  data-aos="zoom-in" src="{{url_for('static', filename='/Image/img.jpg')}}" alt=""  height="200" width="300">
+                <img   data-aos="zoom-in" src="{{url_for('static', filename='/Image/im.png')}}" alt=""  height="200" width="300">
+                <img  data-aos="zoom-in" src="{{url_for('static', filename='/Image/imm.png')}}" alt=""  height="200" width="300">
+                <img  data-aos="zoom-in" src="{{url_for('static', filename='/Image/immm.png')}}" alt="" height="200" width="300">
+            </div>
+        </div>
+    </section>
+
+    <footer >
+        <div class="container" id="contact">
+            <div class="col">
+                <!-- <div  data-aos="zoom-in" class="logo">
+                    <img src="{{url_for('static', filename='/Image/i3.jpg')}}" alt="">
+                </div> -->
+                <P>We are here to make you dwell well!!! <br>Relax and Search. <br>Get rid of worries.</P>
+                <ul class="social-icons">
+                    <li><div class="fa fa-facebook"></div></li>
+                    <li><div class="fa fa-twitter"></div></li>
+                    <li><div class="fa fa-github"></div></li>
+                    <li><div class="fa fa-youtube"></div></li>
+                </ul>
+            </div>
+            
+            <div  data-aos="zoom-in" class="col">
+                <h1>Know More</h1>
+                <ul class="footer-links">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                    
+                </ul>
+            </div>
+            <div  data-aos="zoom-in" class="col">
+                <h1>Get in touch</h1>
+                <ul class="footer-links">
+                    <li>lahari@gmail.com</li>
+                    <li>yanga sri@gmail.com</li>
+                    <li>bhuvaneshwari@gmail.com</li>
+                   
+                    
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyright">
+            <p>@2023.ALL RIGHTS RESERVED.</p>
+        </div>
+
+    </footer>
+
+    
+
+
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+     AOS.init({
+    duration:900,
+}); 
+</script>
+       
+</div>
+</body>
+</html>
